@@ -1,0 +1,130 @@
+body{
+    background-color: #fafafa;
+}
+.img .file {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #555;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+
+.img .file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.img .file:hover {
+    cursor: pointer;
+    background: #555;
+    border-color: #555;
+    color: #fff;
+    text-decoration: none;
+}
+
+.left {
+    width: 50%;
+    min-height: 100%;
+    float: left;
+}
+
+.right {
+    float: right;
+    min-height: 100%;
+    width: 50%;
+}
+
+#copyimg {
+    display: none;
+}
+
+.daysign {
+    margin: 40px auto;
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #ccc;
+}
+
+#txt {
+    width: 364px;
+    height: 86px;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    overflow-y: hidden;
+    /* font-family: "行草"  */
+}
+
+#textimg {
+    position: relative;
+    top: -154px;
+}
+
+
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 300px;
+    border-radius: 10px;
+    /*这个属性设置使填充进度条时的图形为圆角*/
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 10px;
+    /*将轨道设为圆角的*/
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112;
+    /*轨道内置阴影效果*/
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px;
+    /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff;
+    border-radius: 50%;
+    /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5);
+    /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547;
+    /*添加底部阴影*/
+}
+input[type=number] {
+    width: 30px;
+    border: solid 2px #eaeaea;
+    /* border-bottom: solid 1px #eaeaea;
+    border-left: solid 1px #eaeaea; */
+
+    color: #333333;
+    text-align: center;
+    background: transparent;
+    /* border-radius: 10px; */
+}
+
+
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}

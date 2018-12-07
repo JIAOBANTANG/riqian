@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>日签</title>
+    <link rel="stylesheet" href="css/daysign.css">
+</head>
+
+<body>
+    <div class="left">
+        <canvas width="350" height="350" id="copyimg"></canvas>
+        <div class="daysign">
+            <canvas id="daysign" width="400" height="600">
+        </div>
+        <div>
+            <img id="textimg" />
+        </div>
+    </div>
+    <div class="right">
+
+        <div class="img">
+            <a href="javascript:;" class="file">上传图片[defaultCopy(350X350)]
+                <input type="file" name="" id="img">
+            </a>
+        </div>
+
+        <div>
+            <textarea id="txt"></textarea>
+        </div>
+        <div>
+            <table>
+                <tbody>
+                    <!-- <tr>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>选择字体:</label><select id="fontWeight">
+                                <option value="normal">默认"楷"</option>
+                            </select>
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                            <label>fontSize: </label><input type="number" size="4" id="fontSize" value="20" />
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            <label>字体精细:</label><select id="fontWeight">
+                                <option value="normal">正常</option>
+                                <option value="bold">粗</option>
+                            </select>
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                            <label>textLong:</label><input type="number"  size="4" id="len" value="24" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <canvas id="text" width="50" style="border-radius:10px" height="15"></canvas>
+                            【<span id="showcolor"></span>】
+                            <p>
+                                <input type="range" style="background:#ff000040;" id="red" min="0" max="255" value="0" onchange="changeColor();" />
+                            </p>
+                            <p>
+                               <input type="range" style="background:#00ff0040;" id="green" min="0" max="255" value="0" onchange="changeColor();" />
+                            </p>
+                            <p>
+                                <input type="range" style="background:#0000ff40;" id="blue" min="0" max="255" value="0" onchange="changeColor();" />
+                            </p>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <div class="img">
+                                <a href="javascript:;" onclick="textToImg()" class="file">填入日签
+                                </a>
+                            </div>
+                        <td>
+                            <div class="img">
+                                <a href="javascript:;" onclick="reload()" class="file">清空画布
+                                </a>
+                            </div>
+                        </td>
+                        </td>
+
+                        <td>
+                            <div class="img">
+                                <a href="javascript:;" onclick="baseDaySign()" class="file">copyBase64
+                                </a>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="img">
+                                <a href="javascript:;" onclick="imgDaySign()" class="file">下载日签
+                                </a>
+                            </div>
+                            <a id="download"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+        </div>
+        <canvas id="canvas" width="340" height="86"></canvas>
+        <canvas id="author" width="20" height="20"></canvas>
+        <div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/daysign.js"></script>
