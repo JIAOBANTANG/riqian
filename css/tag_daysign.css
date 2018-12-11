@@ -10,12 +10,10 @@ body{
     overflow: hidden;
     color: #555;
     font-weight: bold;
-    margin-top: 20px;
     text-decoration: none;
     text-indent: 0;
     line-height: 20px;
 }
-
 .img .file input {
     position: absolute;
     font-size: 100px;
@@ -31,6 +29,27 @@ body{
     color: #fff;
     text-decoration: none;
 }
+
+.btn{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.btn:hover {
+    cursor: pointer;
+    background: #555;
+    border-color: #555;
+    color: #fff;
+    text-decoration: none;
+}
+
 
 .left {
     width: 50%;

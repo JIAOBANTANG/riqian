@@ -39,9 +39,6 @@ dayimg.onload = function () {
     ctx1.clearRect(dayimg, 25, 25, imgw * ratio, imgh * ratio);
     ctx1.drawImage(dayimg, 25, 25, imgw * ratio, imgh * ratio);
 };
-
-
-
 function getPixelRatio(context) {
     var backingStore = context.backingStorePixelRatio ||
         context.webkitBackingStorePixelRatio ||

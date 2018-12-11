@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>日签</title>
-    <link rel="stylesheet" href="css/daysign.css">
+    <title>tag日签</title>
+    <link rel="shortcut icon" href="https://jiaobantangvideo.oss-cn-beijing.aliyuncs.com/images/icon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/tag_daysign.css">
 </head>
 
 <body>
@@ -58,7 +60,7 @@
                     </tr> -->
                     <tr>
                         <td>
-                            <label>textLong:</label><input type="number"  size="4" id="len" value="24" />
+                            <label>textLong:</label><input type="number" size="4" id="len" value="24" />
                         </td>
                     </tr>
                     <tr>
@@ -66,48 +68,34 @@
                             <canvas id="text" width="50" style="border-radius:10px" height="15"></canvas>
                             【<span id="showcolor"></span>】
                             <p>
-                                <input type="range" style="background:#ff000040;" id="red" min="0" max="255" value="0" onchange="changeColor();" />
+                                <input type="range" style="background:#ff000040;" id="red" min="0" max="255" value="0"
+                                    onchange="changeColor();" />
                             </p>
                             <p>
-                               <input type="range" style="background:#00ff0040;" id="green" min="0" max="255" value="0" onchange="changeColor();" />
+                                <input type="range" style="background:#00ff0040;" id="green" min="0" max="255" value="0"
+                                    onchange="changeColor();" />
                             </p>
                             <p>
-                                <input type="range" style="background:#0000ff40;" id="blue" min="0" max="255" value="0" onchange="changeColor();" />
+                                <input type="range" style="background:#0000ff40;" id="blue" min="0" max="255" value="0"
+                                    onchange="changeColor();" />
                             </p>
-                           
+
                         </td>
                     </tr>
                     <tr>
                         <td>
-
-                            <div class="img">
-                                <a href="javascript:;" onclick="textToImg()" class="file">填入日签
-                                </a>
-                            </div>
-                        <td>
-                            <div class="img">
-                                <a href="javascript:;" onclick="reload()" class="file">清空画布
-                                </a>
-                            </div>
-                        </td>
-                        </td>
-
-                        <td>
-                            <div class="img">
-                                <a href="javascript:;" onclick="baseDaySign()" class="file">copyBase64
-                                </a>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img">
-                                <a href="javascript:;" onclick="imgDaySign()" class="file">下载日签
-                                </a>
-                            </div>
+                            <a href="javascript:;" onclick="textToImg()" class="btn">填入日签
+                            </a>
+                            <a href="javascript:;" onclick="reload()" class="btn">清空画布
+                            </a>
+                            <a href="javascript:;" onclick="baseDaySign()" class="btn">copyBase64
+                            </a>
+                            <a href="javascript:;" onclick="imgDaySign()" class="btn">下载日签
+                            </a>
                             <a id="download"></a>
                         </td>
                     </tr>
-                    <tr>
+
                 </tbody>
             </table>
         </div>
@@ -117,5 +105,6 @@
         </div>
     </div>
 </body>
+
 </html>
-<script src="js/daysign.js"></script>
+<script src="js/tag_daysign.js"></script>

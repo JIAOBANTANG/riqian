@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mono日签</title>
+    <link rel="shortcut icon" href="https://jiaobantangvideo.oss-cn-beijing.aliyuncs.com/images/icon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mono_base64img.css">
+    <link rel="stylesheet" href="./css/mono_daysign.css">
+</head>
+<body>
+    <div class="left">
+        <div class="daysign">
+            <div class="date"></div>
+            <div class="logo"></div>
+            <div class="theme"></div>
+            <div class="themePinyin"></div>
+            <div class="daysignConter">
+                <div class="daysignContent"></div>
+            </div>
+            <div class="author"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div>
+            <textarea id="txt"></textarea><br>
+            <p class="br">>>>每个标点后需换行<<<</p>
+            <input type="text" name="" id="juziAuthor" placeholder="句子作者"><br>
+            <p class="br">>>>句子出处<<<</p>
+            <input type="text" name="" id="themeVal" value="生命">
+            <p class="br">>>>主题<<<</p>
+            <input type="text" name="" id="sign-author" value="搅拌糖">
+            <p class="br">>>>日签作者<<<</p>
+        </div>
+        <div>
+            <a href="javascript:;" onclick="takeScreenshot()" class="btn">填入日签
+            </a>
+            <a href="javascript:;" onclick="reload()" class="btn">清空画布
+            </a>
+            <a href="javascript:;" onclick="baseDaySign()" class="btn">copyBase64
+            </a>
+            <a href="javascript:;" onclick="imgDaySign()" class="btn">下载日签
+            </a>
+            <a id="download"></a>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+<script src="./js/pinyin/pinyin_dict_notone.js"></script>
+<script src="./js/pinyin/pinyin_dict_withtone.js"></script>
+<script src="./js/pinyin/pinyinUtil.js"></script>
+<script src="./js/mono_daysign.js"></script>

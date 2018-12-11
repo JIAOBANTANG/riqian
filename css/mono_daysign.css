@@ -1,0 +1,144 @@
+.left{
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.daysign{
+    width: 640px;
+    height:670px;
+    box-shadow: 0 0 20px #ccc;  
+}
+.right{
+    float: right;
+    width: 400px;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 150px;
+    height: 400px;
+}
+.date{
+    position: relative;
+    top: 34px;
+    left: 39px;
+    font-size: 25px;
+    font-family: 'KaiTi';
+    letter-spacing:2px;
+
+    /* font-weight: bold; */
+    writing-mode: vertical-rl; 
+    /* lr是右-左 */
+}
+.logo{
+    position: relative;
+    top: 223px;
+    left: 35px;    font-size: 20px;
+    padding: 5px;
+    border:1.5px solid red;
+    color:red;
+    font-family: 'KaiTi';
+    writing-mode: vertical-rl; 
+}
+.theme {
+    position: relative;
+    top: -372px;
+    left: 494px;
+    font-size: 53px;
+    font-weight: bold;
+    font-family: 'KaiTi';
+    letter-spacing:4px;
+    writing-mode: vertical-rl; 
+}
+.themePinyin{
+    position: relative;
+    box-sizing: content-box;
+    width: 40px;
+    top: -472px;
+    left: 560px;
+}
+.daysignConter{
+    position: relative;
+    box-sizing: content-box;
+    top: -612px;
+    left: 87px;
+    width: 390px;
+    height: 620px;
+}
+.themePinyinVal{
+    margin-bottom: 39px;
+    font-size:20px; 
+    font-family: 'Times New Roman'; 
+}
+.daysignContent{
+    margin: 0 auto;
+    padding-top: 34px;
+    font-family: 'KaiTi';
+    line-height: 70px;
+    font-size: 36px;
+    font-weight: bold;
+
+    writing-mode: vertical-rl;
+}
+.br{
+   margin: 10px;
+   color:rgb(251, 187, 187);
+}
+
+input[type=text]{
+    color: #555;
+    width: 364px;
+    height: 20px;
+    padding: 5px;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+.mess{
+    display: block;
+    margin-top: 10px;
+}
+.author {
+    position: relative;
+    top: -1073px;
+    left: 529px;
+    font-size: 29px;
+    font-weight:550;
+    font-family: 'KaiTi';
+    letter-spacing:4px;
+    writing-mode: vertical-rl; 
+}
+.btn{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.btn:hover {
+    cursor: pointer;
+    background: #555;
+    border-color: #555;
+    color: #fff;
+    text-decoration: none;
+}
+#txt {
+    margin-top: 20px;
+    padding: 10px;
+    width: 364px;
+    height: 86px;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    color: #555;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    overflow-y: hidden;
+    font-family: "KaiTi" ;
+}
