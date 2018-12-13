@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <link rel="shortcut icon" href="https://jiaobantangvideo.oss-cn-beijing.aliyuncs.com/images/icon.ico" type="image/x-icon">
+    <title>月初日签</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/yuechu_daysign.css">
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/126096/46613/5c10c338f629d8084c263a6e.css' rel='stylesheet' type='text/css' />
+    <!-- <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+       $youziku.load("body", "44baeb12eb384a4cb036a8078bf8918d", "CDMyingbit");
+       /*$youziku.load("#id1,.class1,h1", "44baeb12eb384a4cb036a8078bf8918d", "CDMyingbit");*/
+       /*．．．*/
+       $youziku.draw();
+    </script> -->
+</head>
+<body>
+    <div class="left">
+        <div class="yuechu">
+            <div class="zhezhao">
+                <div class="kk">
+                    <div class="mouth">
+                        
+                    </div>
+                    <div class="mess">
+                        <div class="juzi">
+                            <span class="theme"></span><span class="txt"></span>
+                        </div>
+                    </div>
+                    <div class="year"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="img">
+            <a href="javascript:;" class="file">添加背景[defaultCopy(360X640)]
+                <input type="file" name="" id="upimg">
+            </a>
+        </div>
+        <div>
+            <textarea id="txt"></textarea><br>
+            <p class="br">>>>字数小于56,行数不超过4行<<<</p>
+           <!-- <input type="text" name="" id="juziAuthor" placeholder="句子作者"><br>
+            <p class="br">>>>句子出处<<<</p> -->
+            <input type="text" name="" id="themeVal">
+            <p class="br">>>>主题<<<</p>
+            <!-- <input type="text" name="" id="sign-author" value="搅拌糖">
+            <p class="br">>>>日签作者<<<</p> -->
+        </div>
+        <div>
+                <canvas id="text" width="50" style="border-radius:10px" height="15"></canvas>
+                【<span id="showcolor"></span>】
+                <p>
+                    <input type="range" style="background:#ff000040;" id="red" min="0" max="255" value="255"
+                        onchange="changeColor();" />
+                </p>
+                <p>
+                    <input type="range" style="background:#00ff0040;" id="green" min="0" max="255" value="255"
+                        onchange="changeColor();" />
+                </p>
+                <p>
+                    <input type="range" style="background:#0000ff40;" id="blue" min="0" max="255" value="255"
+                        onchange="changeColor();" />
+                </p>
+        </div>
+
+        <div>
+            <a href="javascript:;" onclick="takeScreenshot()" class="btn">填入日签
+            </a>
+            <a href="javascript:;" onclick="reload()" class="btn">清空画布
+            </a>
+            <a href="javascript:;" onclick="baseDaySign()" class="btn">copyBase64
+            </a>
+            <a href="javascript:;" onclick="imgDaySign()" class="btn">下载日签
+            </a>
+            <a id="download"></a>
+        </div>
+   
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+<script src="./js/yuechu_daysign.js"></script>

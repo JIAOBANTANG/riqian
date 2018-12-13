@@ -1,0 +1,237 @@
+.left{
+    float: left;
+    width: 50%;
+    max-width: 100%;
+}
+.right{
+    float: right;
+    width: 50%;
+    max-width: 100%;
+    text-align: center;
+}
+.yuechu{
+    margin: 20px auto;
+    width: 360px;
+    height: 640px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 5px rgb(133, 133, 133);
+    /* z-index: 1; */
+}
+.zhezhao{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.kk{
+    width: 300px;
+    height: 580px;
+    border:2px solid rgb(202, 202, 202);
+    position: relative;
+    top:28px;
+    left: 28px;
+    box-shadow: 0px 0px 5px #555;
+    background-color: rgb(255, 255, 255,0.1);
+}
+.mouth{
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family:'KaiTi';
+    writing-mode: vertical-lr;
+}
+.year{
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    font-size: 22px;
+    /* border:2px solid #fff;
+    border-left: none;
+    border-bottom: none; */
+}
+.mess{
+    position: absolute;
+    top: 14px;
+    left: 25px;
+    width: 250px;
+    height: 500px;
+}
+.juzi{
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 20px;
+    font-family: 'KaiTi';
+    letter-spacing:2px;
+    line-height: 50px;
+    font-size: 30px;
+    writing-mode: vertical-rl;
+}
+.theme{
+    font-size:60px;
+    border:2px solid rgb(219, 219, 219);
+}
+/* .yuechu::after{
+    position: relative;
+    top: -624px;
+    content:'';
+    display:block;
+    width: 360px;
+    height: 640px;
+    /* z-index: 1; */
+    /* background-color: rgba(0, 0, 0, 0.2) */
+/* } */ */
+.mouth{
+   position: absolute;;
+   top: 10px;
+   left: 20px;
+   font-size: 40px;
+   writing-mode: vertical-lr;
+   z-index: 3;
+}
+/* .yuechu::before{
+    position: relative;
+    top: 8px;
+    left: 8px;
+    content:'';
+    display:block;
+    z-index: 1;
+} */
+.btn{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.btn:hover {
+    cursor: pointer;
+    background: #555;
+    border-color: #555;
+    color: #fff;
+    text-decoration: none;
+}
+
+input[type=text]{
+    color: #555;
+    width: 364px;
+    height: 20px;
+    padding: 5px;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+.mess{
+    display: block;
+    margin-top: 10px;
+}
+.br{
+    margin: 10px;
+    font-size: 18px;
+    color:rgb(251, 187, 187);
+ }
+#txt {
+    margin-top: 20px;
+    padding: 10px;
+    width: 280px;
+    height: 56px;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    color: #555;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+.img{
+    margin-top: 30px;
+}
+.img .file {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.img .file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.img .file:hover {
+    cursor: pointer;
+    background: #555;
+    border-color: #555;
+    color: #fff;
+    text-decoration: none;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+    /*这个属性设置使填充进度条时的图形为圆角*/
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 10px;
+    /*将轨道设为圆角的*/
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112;
+    /*轨道内置阴影效果*/
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px;
+    /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff;
+    border-radius: 50%;
+    /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5);
+    /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547;
+    /*添加底部阴影*/
+}
+input[type=number] {
+    width: 30px;
+    border: solid 2px #eaeaea;
+    /* border-bottom: solid 1px #eaeaea;
+    border-left: solid 1px #eaeaea; */
+
+    color: #333333;
+    text-align: center;
+    background: transparent;
+    /* border-radius: 10px; */
+}
+
+
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
